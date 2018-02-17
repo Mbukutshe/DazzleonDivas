@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="80dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ViewFlipper
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        android:src="@drawable/home1"
+                        android:id="@+id/imageView"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        android:src="@drawable/home2" />
+
+                </RelativeLayout>
+            </ViewFlipper>
+
+            <TextView
+                android:id="@+id/heading"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowRadius="1.0"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:padding="16dp"
+                android:id="@+id/operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowRadius="1.0"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:padding="16dp"
+                android:text="Let your inner beauty shine for all the world to see.
+                       Dazzle-on Divas is a product of my love and passion for hair and makeup and my decision to transform it into a business. I love helping people be their most beautiful selves!
+                       Take your moment to DAZZLE like the DIVA you were born to be!. "
+                android:id="@+id/contentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowRadius="1.0"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:textColor="@color/colorPrimary"
+                android:typeface="serif"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

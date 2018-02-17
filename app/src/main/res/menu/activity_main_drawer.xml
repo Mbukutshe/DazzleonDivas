@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/icons8gallery"
+            android:title="Gallery"/>
+
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/icons8services"
+            android:title="Services"/>
+
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/icons8message"
+            android:title="Messages"/>
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/icons8location"
+            android:title="Directions"/>
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/icons8about"
+            android:title="About Me"/>
+
+        <item
+            android:id="@+id/nav_contsct_us"
+            android:icon="@drawable/icons8contact"
+            android:title="Contact Me"/>
+
+        <item
+            android:id="@+id/nav_website"
+            android:icon="@drawable/icons8website"
+            android:title="Website"/>
+
+    </group>
+
+    <item android:title="Administration">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/icons8login"
+                android:title="LogIn"/>
+
+            <item
+                android:id="@+id/nav_subscribe"
+                android:icon="@drawable/icons8subscribe"
+                android:title="Subscribe"/>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/icons8share"
+                android:title="Share App"/>
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icons8exit"
+                android:title="Exit"/>
+        </menu>
+    </item>
+
+</menu>

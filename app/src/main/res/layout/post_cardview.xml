@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    card_view:cardElevation="3dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:contentPaddingLeft="10dp"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingBottom="8dp"
+    card_view:contentPaddingRight="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:theme="@style/AlertDialog.AppCompat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/ptitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"/>
+
+            <ImageView
+                android:layout_below="@+id/ptitle"
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"/>
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_below="@+id/post_image"
+            android:id="@+id/pdescription"
+            android:text="description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:id="@+id/ads_share"
+            android:src="@drawable/ic_menu_share"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/pdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@+id/pdescription"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPaddingLeft="5dp"
+            card_view:contentPaddingTop="5dp"
+            card_view:contentPaddingBottom="5dp"
+            card_view:contentPaddingRight="5dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:theme="@style/AlertDialog.AppCompat">
+
+            <TextView
+                android:id="@+id/more"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MORE"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

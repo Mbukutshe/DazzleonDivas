@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/reguser"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regusername"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Username"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/regnam"
+        android:layout_below="@+id/reguser"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regName"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="FirstName"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/regsurn"
+        android:layout_below="@+id/regnam"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regsurname"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="LastName"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/regdb"
+        android:layout_below="@+id/regsurn"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regDOB"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="DOB"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/regdb"
+            android:id="@+id/Rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".28"
+            android:background="@drawable/background"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/down" />
+
+        </RelativeLayout>
+
+
+ <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/regpass"
+        android:layout_below="@id/Rlayout"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regpassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/regcon"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regpass"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regConfpassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_below="@+id/regcon"
+            android:background="@drawable/button_background"
+            android:id="@+id/btnreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"/>
+
+    </RelativeLayout>
+</ScrollView>

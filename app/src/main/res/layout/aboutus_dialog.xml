@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRESHIKA EBRAHIM "/>
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFESSIONAL MAKEUP ARTIST AND HAIR STYLIST"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_imae"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/diva_profile" />
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you’d asked me a decade ago to name some of the things that would interest me and have an impact on my life, I can honestly tell you that makeup and styling was the furthest thing from my mind. Friends and family,sure!, music, reading, fashion,  absolutely! — but makeup? Not in the slightest."/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:textSize="15dp"
+            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I started playing around with makeup when I began to have skin problems which left visible scarring on my face. It made me self-conscious.  Over the years, my initial dabbling in the world of makeup transformed into a full-blown obsession. Now, at 29 years old, makeup has become an important part of my daily routine."/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
